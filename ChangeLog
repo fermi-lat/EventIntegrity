@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jan 14 14:49:16 PST 2005
+EventIntegrity/src
+
+Modified Files:
+	EventIntegrityAlg.cxx 
+Log Message:
+handle error bits
+    *
+------------------------------------------------------------
 User: heather  Mon Oct 18 14:23:26 PDT 2004
 EventIntegrity/cmt
 
