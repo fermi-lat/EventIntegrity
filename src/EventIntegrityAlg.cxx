@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.4 2004/10/18 21:22:35 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.5 2005/01/14 22:49:15 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -98,6 +98,7 @@ StatusCode EventIntegrityAlg::execute()
     // If the Event Flags do exist on the TDS - check them
     // dump the event if any bit in the mask is set
     if( (m_mask!=0) && ( flags & m_mask) ) {
+        // Ignoring TkrRecon Error bit
         if ( (summary->packetError()) || (summary->summaryError()) ) {
             setFilterPassed( false );
             log << MSG::INFO << "Event Flag contains Error bits - skipping " 
@@ -107,6 +108,11 @@ StatusCode EventIntegrityAlg::execute()
             setFilterPassed(false);
             log << MSG::INFO << "Event Flag contains Bad Event Seq - skipping " 
                              << summary->eventSequence() << endreq;
+        }
+        if (summary->trgParityError()) {
+            setFilterPassed(false);
+            log << MSG::INFO << "Trigger Parity Error bit set - skipping "
+                             << summary->trgParityError() << endreq;
         }
     } 
 
