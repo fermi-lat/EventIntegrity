@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.1.1.1 2004/08/26 17:10:28 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.2 2004/08/27 05:29:59 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -100,7 +100,7 @@ StatusCode EventIntegrityAlg::execute()
     if( (m_mask!=0) && ( flags & m_mask) ) {
         setFilterPassed( false );
         log << MSG::DEBUG << "Event Flag is Bad for event: " 
-                           summary->eventSequence() << endreq;
+                           << summary->eventSequence() << endreq;
     } 
 
     return sc;
