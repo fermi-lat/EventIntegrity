@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Mar 15 20:58:26 PST 2005
+EventIntegrity/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+change in LdfEvent::EventSummary method
+    *
+------------------------------------------------------------
 User: heather  Tue Mar 15 20:58:14 PST 2005
 EventIntegrity/doc
 
