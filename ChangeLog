@@ -1,0 +1,33 @@
+------------------------------------------------------------
+User: heather  Thu Aug 26 10:10:29 PDT 2004
+EventIntegrity
+
+Log Message:
+Initial version of EventIntegrity
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+I EventIntegrity/rh9_gcc32
+N EventIntegrity/.cvsignore
+N EventIntegrity/cmt/requirements
+I EventIntegrity/cmt/Makefile
+I EventIntegrity/cmt/cleanup.csh
+I EventIntegrity/cmt/setup.csh
+I EventIntegrity/cmt/setup.sh
+I EventIntegrity/cmt/rh9_gcc32.make
+I EventIntegrity/cmt/cleanup.sh
+N EventIntegrity/cmt/.cvsignore
+N EventIntegrity/doc/release.notes
+N EventIntegrity/src/.cvsignore
+N EventIntegrity/src/mainpage.h
+N EventIntegrity/src/EventIntegrityAlg.cxx
+N EventIntegrity/src/test/jobOptions.txt
+N EventIntegrity/src/Dll/EventIntegrity_dll.cxx
+N EventIntegrity/src/Dll/EventIntegrity_load.cxx
+
+No conflicts created by this import
+
+    *
