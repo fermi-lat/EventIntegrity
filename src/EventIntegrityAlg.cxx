@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.2 2004/08/27 05:29:59 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.3 2004/08/27 05:38:54 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -108,6 +108,7 @@ StatusCode EventIntegrityAlg::execute()
 
 StatusCode EventIntegrityAlg::finalize() {
 
+    setFinalized();
     StatusCode  sc = StatusCode::SUCCESS;
 
     MsgStream log(msgSvc(), name());
