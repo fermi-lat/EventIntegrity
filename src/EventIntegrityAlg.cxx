@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.5 2005/01/14 22:49:15 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.6 2005/01/18 07:21:23 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -99,7 +99,7 @@ StatusCode EventIntegrityAlg::execute()
     // dump the event if any bit in the mask is set
     if( (m_mask!=0) && ( flags & m_mask) ) {
         // Ignoring TkrRecon Error bit
-        if ( (summary->packetError()) || (summary->summaryError()) ) {
+        if ( (summary->packetError()) || (summary->temError()) ) {
             setFilterPassed( false );
             log << MSG::INFO << "Event Flag contains Error bits - skipping " 
                              << summary->eventSequence() << endreq;
