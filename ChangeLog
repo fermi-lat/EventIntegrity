@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+TAG
+Tag name: v0r3, operation: add
+Package: EventIntegrity
+User: heather  Tue Mar 15 20:58:58 2005
+Files:
+  EventIntegrity/.cvsignore  1.1.1.1
+  EventIntegrity/ChangeLog  1.21
+  EventIntegrity/cmt/.cvsignore  1.1.1.1
+  EventIntegrity/cmt/requirements  1.6
+  EventIntegrity/doc/release.notes  1.6
+  EventIntegrity/src/.cvsignore  1.1.1.1
+  EventIntegrity/src/mainpage.h  1.1.1.1
+  EventIntegrity/src/EventIntegrityAlg.cxx  1.7
+  EventIntegrity/src/Dll/EventIntegrity_load.cxx  1.1.1.1
+  EventIntegrity/src/Dll/EventIntegrity_dll.cxx  1.1.1.1
+  EventIntegrity/src/test/test_EventIntegrity.cxx  1.1
+  EventIntegrity/src/test/jobOptions.txt  1.2
+
+    *
+------------------------------------------------------------
 User: heather  Tue Mar 15 20:58:37 PST 2005
 EventIntegrity/src
 
