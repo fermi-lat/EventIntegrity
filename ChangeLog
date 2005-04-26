@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr 25 21:42:03 PDT 2005
+EventIntegrity/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+use EventId rather than event sequence
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r3, operation: add
 Package: EventIntegrity
