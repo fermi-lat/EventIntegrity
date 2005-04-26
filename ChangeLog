@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr 25 21:42:13 PDT 2005
+EventIntegrity/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+use EventId rather than event sequence
+    *
+------------------------------------------------------------
 User: heather  Mon Apr 25 21:42:03 PDT 2005
 EventIntegrity/doc
 
