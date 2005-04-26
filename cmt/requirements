@@ -1,8 +1,8 @@
 package EventIntegrity 
-version v0r3
+version v0r4
 
 author H. Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.5 2005/01/18 07:21:05 heather Exp $
+# $Id: requirements,v 1.6 2005/03/16 04:58:26 heather Exp $
 
 # --------------------------
 # define algorithms that check event flags to see if we should fully process
