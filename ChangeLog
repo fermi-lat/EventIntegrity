@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: cohen  Tue Mar 28 13:44:29 PST 2006
+EventIntegrity/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+remove EventSelector
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r4, operation: add
 Package: EventIntegrity
