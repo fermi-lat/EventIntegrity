@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Sat Apr 15 23:31:54 PDT 2006
+EventIntegrity/src
+
+Modified Files:
+      Tag: EM-v6r070329p2
+	EventIntegrityAlg.cxx 
+Log Message:
+add flag for LDF status
+    *
+------------------------------------------------------------
+User: heather  Sat Apr 15 23:31:54 PDT 2006
 EventIntegrity/doc
 
 Modified Files:
