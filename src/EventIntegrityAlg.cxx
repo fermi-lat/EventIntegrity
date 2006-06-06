@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.7 2005/03/16 04:58:37 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.8.2.1 2006/04/16 06:31:54 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -67,7 +67,9 @@ StatusCode EventIntegrityAlg::initialize()
     setProperties();
 
     log << MSG::INFO;
-    if(log.isActive()) { log.stream() <<"Applying event flag mask: " <<  std::setbase(16) <<m_mask;
+    if(log.isActive()) { 
+        log.stream() <<"Applying event flag mask: " 
+                     <<  std::setbase(16) <<m_mask;
     }
     log << endreq;
 
@@ -106,6 +108,11 @@ StatusCode EventIntegrityAlg::execute()
     // dump the event if any bit in the mask is set
     if( (m_mask!=0) && ( flags & m_mask) ) {
         // Ignoring TkrRecon Error bit
+        if ( summary->badLdfStatus()) {
+            setFilterPassed(false);
+            log << MSG::INFO << "Event Flag contains Bad LDF Status skipping " 
+                             << evtTds->event() << endreq;
+         }
         if ( (summary->packetError()) || (summary->temError()) ) {
             setFilterPassed( false );
             log << MSG::INFO << "Event Flag contains Error bits - skipping " 
@@ -121,6 +128,7 @@ StatusCode EventIntegrityAlg::execute()
             log << MSG::INFO << "Trigger Parity Error bit set - skipping "
                              << summary->trgParityError() << endreq;
         }
+      
     } 
 
     return sc;
