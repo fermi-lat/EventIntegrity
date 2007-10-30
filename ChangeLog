@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Oct 29 19:58:15 PDT 2007
+EventIntegrity/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+use gr_app
+    *
+------------------------------------------------------------
+User: heather  Mon Oct 29 19:58:15 PDT 2007
 EventIntegrity/cmt
 
 Modified Files:
