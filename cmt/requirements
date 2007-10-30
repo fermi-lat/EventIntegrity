@@ -1,8 +1,8 @@
 package EventIntegrity 
-version v0r5
+version v0r6
 
 author H. Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.7.2.1 2006/04/16 06:31:53 heather Exp $
+# $Id: requirements,v 1.8 2006/06/06 05:48:43 heather Exp $
 
 # --------------------------
 # define algorithms that check event flags to see if we should fully process
@@ -22,6 +22,7 @@ apply_pattern packageShr
 
 #=============================================================
 private
+use gr_app *
 
 # get flags to build shared library
 
