@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: ecephas  Thu Aug 28 14:48:11 PDT 2008
+GlastRelease-scons/EventIntegrity
+
+Modified Files:
+	SConscript 
+Log Message:
+Changed
+
+ test_EventIntegrity = progEnv.GaudiProgram('test_EventIntegrity', ['src/test/*.cxx'], test = 1)
+
+TO
+
+ test_EventIntegrity = progEnv.GaudiProgram('test_EventIntegrity', listFiles(['src/test/*.cxx']), test = 1)
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:42:34 PDT 2008
 GlastRelease-scons/EventIntegrity
 
