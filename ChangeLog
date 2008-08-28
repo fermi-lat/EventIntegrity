@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Thu Aug 28 14:50:54 PDT 2008
+GlastRelease-scons/EventIntegrity
+
+Modified Files:
+	EventIntegrityLib.py 
+Log Message:
+Added env.Tool('GlastSvcLib')
+    *
+------------------------------------------------------------
 User: ecephas  Thu Aug 28 14:48:11 PDT 2008
 GlastRelease-scons/EventIntegrity
 
