@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 13:39:49 PST 2008
+GlastRelease-scons/EventIntegrity
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for EventIntegrity v0r6 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 User: ecephas  Thu Aug 28 14:50:54 PDT 2008
 GlastRelease-scons/EventIntegrity
 
