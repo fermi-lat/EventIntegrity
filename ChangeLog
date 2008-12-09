@@ -2,6 +2,16 @@
 TAG
 Tag name: EventIntegrity-00-06-00, operation: add
 Package: EventIntegrity
+User: ecephas  Mon Dec  8 16:08:26 2008
+Files:
+  EventIntegrity/EventIntegrityLib.py  1.2
+  EventIntegrity/EventIntegrityLib.py  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: EventIntegrity-00-06-00, operation: add
+Package: EventIntegrity
 User: ecephas  Mon Dec  8 13:39:55 2008
 Files:
   EventIntegrity/SConscript  1.3
