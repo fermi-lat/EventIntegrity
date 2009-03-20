@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Mar 20 12:08:16 PDT 2009
+EventIntegrity/src
+
+Modified Files:
+	EventIntegrityAlg.cxx 
+Log Message:
+add in handling for TEM bug
+    *
+------------------------------------------------------------
 User: heather  Fri Mar 20 12:08:15 PDT 2009
 EventIntegrity/doc
 
