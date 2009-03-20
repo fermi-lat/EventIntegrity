@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v0r7, operation: mov
+Package: EventIntegrity
+User: glastrm  Fri Mar 20 12:30:25 2009
+Files:
+  EventIntegrity/SConscript  1.5
+
+    *
+------------------------------------------------------------
 User: glastrm  Fri Mar 20 12:30:19 PDT 2009
 EventIntegrity
 
