@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Fri Mar 20 12:08:15 PDT 2009
+EventIntegrity/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add in handling for TEM bug
+    *
+------------------------------------------------------------
+User: heather  Fri Mar 20 12:08:15 PDT 2009
 EventIntegrity/cmt
 
 Modified Files:
