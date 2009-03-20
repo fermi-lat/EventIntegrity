@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Mar 20 12:08:15 PDT 2009
+EventIntegrity/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add in handling for TEM bug
+    *
+------------------------------------------------------------
 TAG
 Tag name: EventIntegrity-00-06-00, operation: mov
 Package: EventIntegrity
