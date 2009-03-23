@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Mar 23 06:49:02 PDT 2009
+EventIntegrity/src
+
+Modified Files:
+	EventIntegrityAlg.cxx 
+Log Message:
+check phase Error as well
+    *
+------------------------------------------------------------
+User: heather  Mon Mar 23 06:49:02 PDT 2009
 EventIntegrity/doc
 
 Modified Files:
