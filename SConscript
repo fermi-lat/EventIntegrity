@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/SConscript,v 1.4 2009/01/23 00:06:59 ecephas Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/SConscript,v 1.5 2009/03/20 19:30:19 glastrm Exp $
 # Authors: H. Kelly <heather@milkyway.gsfc.nasa.gov>
-# Version: EventIntegrity-00-07-00
+# Version: EventIntegrity-00-08-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
