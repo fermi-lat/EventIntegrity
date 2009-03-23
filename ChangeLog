@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Mar 23 06:49:01 PDT 2009
+EventIntegrity/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+check phase Error as well
+    *
+------------------------------------------------------------
 TAG
 Tag name: EventIntegrity-00-07-00, operation: add
 Package: EventIntegrity
