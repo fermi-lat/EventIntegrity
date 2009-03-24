@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Mar 23 20:22:12 PDT 2009
+EventIntegrity/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+print out event ids consistently when errors found
+    *
+------------------------------------------------------------
+User: heather  Mon Mar 23 20:22:12 PDT 2009
 EventIntegrity/cmt
 
 Modified Files:
