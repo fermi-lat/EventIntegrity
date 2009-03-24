@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Mar 23 20:22:12 PDT 2009
+EventIntegrity/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+print out event ids consistently when errors found
+    *
+------------------------------------------------------------
 TAG
 Tag name: EventIntegrity-00-08-00, operation: add
 Package: EventIntegrity
