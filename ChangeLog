@@ -1,5 +1,27 @@
 ------------------------------------------------------------
 TAG
+Tag name: EventIntegrity-00-08-01, operation: add
+Package: EventIntegrity
+User: glastrm  Mon Mar 23 20:30:29 2009
+Files:
+  EventIntegrity/.cvsignore  1.1.1.1
+  EventIntegrity/ChangeLog  1.69
+  EventIntegrity/SConscript  1.7
+  EventIntegrity/EventIntegrityLib.py  1.2
+  EventIntegrity/cmt/.cvsignore  1.1.1.1
+  EventIntegrity/cmt/requirements  1.12
+  EventIntegrity/doc/release.notes  1.12
+  EventIntegrity/src/.cvsignore  1.1.1.1
+  EventIntegrity/src/mainpage.h  1.1.1.1
+  EventIntegrity/src/EventIntegrityAlg.cxx  1.12
+  EventIntegrity/src/Dll/EventIntegrity_load.cxx  1.1.1.1
+  EventIntegrity/src/Dll/EventIntegrity_dll.cxx  1.1.1.1
+  EventIntegrity/src/test/test_EventIntegrity.cxx  1.1
+  EventIntegrity/src/test/jobOptions.txt  1.3
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v0r8p1, operation: mov
 Package: EventIntegrity
 User: glastrm  Mon Mar 23 20:30:24 2009
