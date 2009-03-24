@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.10 2009/03/20 19:08:16 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.11 2009/03/23 13:49:02 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -126,18 +126,18 @@ StatusCode EventIntegrityAlg::execute()
         if (summary->trgParityError()) {
             setFilterPassed(false);
             log << MSG::INFO << "Trigger Parity Error bit set - skipping "
-                             << summary->trgParityError() << endreq;
+                             << evtTds->event() << endreq;
         }
         if (summary->temBug()) {
             setFilterPassed(false);
             log << MSG::INFO << "TEM bug set - skipping "
-                             << summary->temBug() << endreq;
+                             << evtTds->event() << endreq;
         
         }
         if (summary->phaseError()) {
            setFilterPassed(false);
             log << MSG::INFO << "Phase Error set - skipping "
-                             << summary->phaseError() << endreq;
+                             << evtTds->event() << endreq;
         }
       
     } 
