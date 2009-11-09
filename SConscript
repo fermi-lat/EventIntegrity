@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/SConscript,v 1.7 2009/03/24 03:30:18 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/EventIntegrity/SConscript,v 1.8 2009/04/01 03:30:17 glastrm Exp $
 # Authors: H. Kelly <heather@milkyway.gsfc.nasa.gov>
 # Version: EventIntegrity-00-08-02
 Import('baseEnv')
@@ -15,8 +15,7 @@ EventIntegrity = libEnv.SharedLibrary('EventIntegrity', listFiles(['src/*.cxx','
 progEnv.Tool('EventIntegrityLib')
 test_EventIntegrity = progEnv.GaudiProgram('test_EventIntegrity', listFiles(['src/test/*.cxx']), test = 1)
 
-progEnv.Tool('registerObjects', package = 'EventIntegrity', libraries = [EventIntegrity], testApps = [test_EventIntegrity], includes = listFiles(['EventIntegrity/*.h']))
-
-
-
-
+progEnv.Tool('registerTargets', package = 'EventIntegrity',
+             libraryCxts = [[EventIntegrity,libEnv]],
+             testAppCxts = [[test_EventIntegrity, progEnv]],
+             includes = listFiles(['EventIntegrity/*.h']))
