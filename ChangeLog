@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Nov  9 15:59:16 PST 2009
+GlastRelease-scons/EventIntegrity
+
+Modified Files:
+	.cvsignore EventIntegrityLib.py SConscript 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: heather  Wed Jul  1 08:57:13 PDT 2009
 EventIntegrity/doc
 
