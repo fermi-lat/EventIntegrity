@@ -1,5 +1,27 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease_Pass7-17-35-23-gr11, operation: add
+Package: EventIntegrity
+User: heather  Fri Aug  5 21:30:47 2011
+Files:
+  EventIntegrity/.cvsignore  1.2
+  EventIntegrity/ChangeLog  1.107
+  EventIntegrity/SConscript  1.13
+  EventIntegrity/EventIntegrityLib.py  1.3
+  EventIntegrity/cmt/.cvsignore  1.1.1.1
+  EventIntegrity/cmt/requirements  1.16
+  EventIntegrity/doc/release.notes  1.17
+  EventIntegrity/src/.cvsignore  1.1.1.1
+  EventIntegrity/src/mainpage.h  1.1.1.1
+  EventIntegrity/src/EventIntegrityAlg.cxx  1.13
+  EventIntegrity/src/Dll/EventIntegrity_load.cxx  1.1.1.1
+  EventIntegrity/src/Dll/EventIntegrity_dll.cxx  1.1.1.1
+  EventIntegrity/src/test/test_EventIntegrity.cxx  1.1
+  EventIntegrity/src/test/jobOptions.txt  1.3
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease_Pass7-17-35-23-gr10, operation: add
 Package: EventIntegrity
 User: heather  Fri Aug  5 11:59:17 2011
