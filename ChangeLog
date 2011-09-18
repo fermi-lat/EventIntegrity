@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sat Sep 17 18:03:04 PDT 2011
+EventIntegrity/src
+
+Modified Files:
+	EventIntegrityAlg.cxx 
+Log Message:
+Tighten up the INFO output
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: EventIntegrity
