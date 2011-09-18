@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.12 2009/03/24 03:22:12 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.13 2009/04/01 03:03:35 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -57,6 +57,10 @@ Algorithm(name, pSvcLocator)
 
 }
 
+namespace {
+    int skipCount;
+}
+
 StatusCode EventIntegrityAlg::initialize() 
 {
     StatusCode sc = StatusCode::SUCCESS;
@@ -73,6 +77,7 @@ StatusCode EventIntegrityAlg::initialize()
     }
     log << endreq;
 
+    skipCount = 0;
 
     return sc;
 }
@@ -106,52 +111,36 @@ StatusCode EventIntegrityAlg::execute()
 
     // If the Event Flags do exist on the TDS - check them
     // dump the event if any bit in the mask is set
-    if( (m_mask!=0) && ( flags & m_mask) ) {
+    std::string errorMessage = "";
+    if( (m_mask!=0) && ( flags & m_mask) ) { 
         // Ignoring TkrRecon Error bit
         if ( summary->badLdfStatus()) {
-            setFilterPassed(false);
-            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
-	         << " contains Bad LDF Status skipping " 
-                 << std::dec << evtTds->event() << endreq;
+            errorMessage += " Bad LDF Status;";
          }
         if (summary->packetError()) {
-            setFilterPassed( false );
-            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
-                << " contains Packet Error - skipping " 
-                << std::dec << evtTds->event() << endreq;
+            errorMessage += " Packet Error;";
         }
         if ( summary->temError() ) {
-            setFilterPassed( false );
-            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
-                << " contains TEM Error - skipping " 
-                << std::dec << evtTds->event() << endreq;
+            errorMessage += " TEM Error;";
         }
         if (summary->badEventSeq()) {
-            setFilterPassed(false);
-            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
-                << " contains Bad Event Seq - skipping " 
-                << std::dec << evtTds->event() << endreq;
-        }
+            errorMessage += " Bad Event Seq;";
+         }
         if (summary->trgParityError()) {
-            setFilterPassed(false);
-            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
-                << " contains Trigger Parity Error bit set - skipping "
-                << std::dec << evtTds->event() << endreq;
+            errorMessage += " Trig. Parity Error;";
         }
         if (summary->temBug()) {
-            setFilterPassed(false);
-            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
-                << " TEM bug set - skipping "
-                << std::dec << evtTds->event() << endreq;
-        
+            errorMessage += " TEM bug;";        
         }
         if (summary->phaseError()) {
-           setFilterPassed(false);
-            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
-                << " Phase Error set - skipping "
-                << std::dec << evtTds->event() << endreq;
+           errorMessage += " Phase Error;";
         }
-      
+        if (errorMessage!="") {
+            setFilterPassed(false);
+            log << MSG::INFO << "Event " << evtTds->event() << "skipped: flag 0x" << std::hex << flags
+                << " bits: " << errorMessage << endreq;
+            skipCount++;
+        }
     } 
 
     return sc;
@@ -163,6 +152,7 @@ StatusCode EventIntegrityAlg::finalize() {
     StatusCode  sc = StatusCode::SUCCESS;
 
     MsgStream log(msgSvc(), name());
+    log << MSG::INFO << skipCount << " event(s) skipped" << endreq;
 
     return StatusCode::SUCCESS;
 }
