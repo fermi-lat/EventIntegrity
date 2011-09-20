@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.13 2009/04/01 03:03:35 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.14 2011/09/18 01:03:03 lsrea Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -137,8 +137,8 @@ StatusCode EventIntegrityAlg::execute()
         }
         if (errorMessage!="") {
             setFilterPassed(false);
-            log << MSG::INFO << "Event " << evtTds->event() << "skipped: flag 0x" << std::hex << flags
-                << " bits: " << errorMessage << endreq;
+            log << MSG::INFO << "Event " << evtTds->event() << " skipped - flag 0x" << std::hex << flags
+                << ":" << errorMessage << endreq;
             skipCount++;
         }
     } 
