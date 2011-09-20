@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Tue Sep 20 08:23:11 PDT 2011
+EventIntegrity/src
+
+Modified Files:
+	EventIntegrityAlg.cxx 
+Log Message:
+finishing touches on reducing the chatter in the log file
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: EventIntegrity-00-08-06, operation: add
 Package: EventIntegrity
