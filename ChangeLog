@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Dec 12 12:47:50 PST 2011
+GlastRelease-scons/EventIntegrity/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+merge Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Dec 12 12:47:50 PST 2011
 GlastRelease-scons/EventIntegrity/cmt
 
 Modified Files:
