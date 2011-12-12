@@ -1,8 +1,8 @@
 package EventIntegrity 
-version v0r8p7
+version v0r9p0
 
 author H. Kelly <heather@slac.stanford.edu>
-# $Id: requirements,v 1.18 2011/09/20 15:24:56 lsrea Exp $
+# $Id: requirements,v 1.19 2011/12/12 20:47:50 heather Exp $
 
 # --------------------------
 # define algorithms that check event flags to see if we should fully process
