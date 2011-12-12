@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.14 2011/09/18 01:03:03 lsrea Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.15 2011/09/20 15:23:11 lsrea Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -46,8 +46,9 @@ private:
 
 };
 
-static const AlgFactory<EventIntegrityAlg>  Factory;
-const IAlgFactory& EventIntegrityAlgFactory = Factory;
+//static const AlgFactory<EventIntegrityAlg>  Factory;
+//const IAlgFactory& EventIntegrityAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(EventIntegrityAlg);
 
 
 EventIntegrityAlg::EventIntegrityAlg(const std::string& name, ISvcLocator* pSvcLocator) :
@@ -148,7 +149,7 @@ StatusCode EventIntegrityAlg::execute()
 
 StatusCode EventIntegrityAlg::finalize() {
 
-    setFinalized();
+    //setFinalized(); No longer available in Gaudi v21r7
     StatusCode  sc = StatusCode::SUCCESS;
 
     MsgStream log(msgSvc(), name());
