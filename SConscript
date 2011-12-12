@@ -1,7 +1,8 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/SConscript,v 1.14 2011/09/18 01:03:48 lsrea Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/EventIntegrity/SConscript,v 1.15 2011/09/20 15:24:56 lsrea Exp $
 # Authors: H. Kelly <heather@milkyway.gsfc.nasa.gov>
-# Version: EventIntegrity-00-08-07
+# Version: EventIntegrity-00-09-00
+
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
@@ -9,7 +10,8 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package='EventIntegrity', toBuild='component')
-EventIntegrity = libEnv.SharedLibrary('EventIntegrity', listFiles(['src/*.cxx','src/Dll/*.cxx']))
+EventIntegrity = libEnv.ComponentLibrary('EventIntegrity',
+                                         listFiles(['src/*.cxx']))
 
 
 progEnv.Tool('EventIntegrityLib')
