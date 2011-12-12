@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 12 12:48:25 PST 2011
+GlastRelease-scons/EventIntegrity/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix up version in req file
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 12 12:47:51 PST 2011
 GlastRelease-scons/EventIntegrity/src/test
 
