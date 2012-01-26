@@ -1,8 +1,8 @@
 package EventIntegrity 
-version v0r8p5
+version v0r8p5gr01
 
-author H. Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.15 2010/06/12 17:24:15 jrb Exp $
+author H. Kelly <heather@slac.stanford.edu>
+# $Id: requirements,v 1.20 2011/12/12 20:48:25 heather Exp $
 
 # --------------------------
 # define algorithms that check event flags to see if we should fully process
@@ -22,6 +22,7 @@ apply_pattern packageShr
 
 #=============================================================
 private
+use RootmapPolicy * GlastPolicy
 use gr_app *
 
 # get flags to build shared library
@@ -29,6 +30,8 @@ use gr_app *
 apply_pattern package_Cshlibflags
 apply_pattern package_headers
 
-library EventIntegrity  *.cxx Dll/*.cxx ${EventIntegrity_headers}
+library EventIntegrity  *.cxx ${EventIntegrity_headers}
+
+apply_pattern generate_rootmap library=EventIntegrity
 
 apply_pattern package_test
