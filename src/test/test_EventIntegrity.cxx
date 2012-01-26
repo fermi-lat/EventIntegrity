@@ -1,7 +1,7 @@
 /** @file test_EventIntegrityAlg.cxx
     @brief declartion, implementaion of the class test_EventIntegrityAlg
 
-    $Header: /nfs/slac/g/glast/ground/cvs/userAlg/src/test_EventIntegrityAlg.cxx,v 1.15 2004/07/15 19:02:54 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/test/test_EventIntegrity.cxx,v 1.2 2011/12/12 20:47:51 heather Exp $
 */
 // Gaudi system includes
 #include "GaudiKernel/MsgStream.h"
@@ -37,8 +37,9 @@ private:
 };
 
 
-static const AlgFactory<test_EventIntegrityAlg>  Factory;
-const IAlgFactory& test_EventIntegrityAlgFactory = Factory;
+//static const AlgFactory<test_EventIntegrityAlg>  Factory;
+//const IAlgFactory& test_EventIntegrityAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(test_EventIntegrityAlg);
 
 test_EventIntegrityAlg::test_EventIntegrityAlg(const std::string& name, ISvcLocator* pSvcLocator)
 :Algorithm(name, pSvcLocator)
