@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Wed Jan 25 20:47:27 PST 2012
+EventIntegrity/src
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	EventIntegrityAlg.cxx 
+Log Message:
+gaudi v21r7 for rhel5
+    *
+------------------------------------------------------------
+User: heather  Wed Jan 25 20:47:27 PST 2012
 EventIntegrity/doc
 
 Modified Files:
