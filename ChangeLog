@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Mar 22 14:11:57 PDT 2012
+EventIntegrity
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br03
+	SConscript 
+Log Message:
+add in all possible error checking and modify default mask
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-br04, operation: add
 Package: EventIntegrity
