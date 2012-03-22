@@ -2,7 +2,7 @@
 * @file EventIntegrityAlg.cxx
 * @brief Declaration and definition of the algorithm EventIntegrityAlg.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.12 2009/03/24 03:22:12 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/EventIntegrity/src/EventIntegrityAlg.cxx,v 1.13 2009/04/01 03:03:35 heather Exp $
 */
 
 #include "GaudiKernel/MsgStream.h"
@@ -53,7 +53,7 @@ const IAlgFactory& EventIntegrityAlgFactory = Factory;
 EventIntegrityAlg::EventIntegrityAlg(const std::string& name, ISvcLocator* pSvcLocator) :
 Algorithm(name, pSvcLocator)
 {
-    declareProperty("mask"     ,  m_mask=0xffffffff); // event flag mask
+    declareProperty("mask"     ,  m_mask=0x0022003d); // event flag mask
 
 }
 
@@ -149,6 +149,72 @@ StatusCode EventIntegrityAlg::execute()
            setFilterPassed(false);
             log << MSG::INFO << "Event Flag 0x" << std::hex << flags
                 << " Phase Error set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtrcPhase()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTRC Phase Error set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtfePhase()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTFE Phase Error set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtccFifo()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTCC FIFO Error set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtccHdrParity()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTCC HdrParity set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtccWcParity()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTCC WcParity set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtrcSummary()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTRC Summary set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtccDataParity()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTCC Data Parity set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtccTimeout()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTCC Timeout set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gcccError()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GCCC Error set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->gtccError()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " GTCC Error set - skipping "
+                << std::dec << evtTds->event() << endreq;
+        }
+        if (summary->timeoutError()) {
+           setFilterPassed(false);
+            log << MSG::INFO << "Event Flag 0x" << std::hex << flags
+                << " Timeout Error set - skipping "
                 << std::dec << evtTds->event() << endreq;
         }
       
