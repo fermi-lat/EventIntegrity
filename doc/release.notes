@@ -1,9 +1,12 @@
-/** @file release.notes
  * @brief package EventIntegrity 
  * package manager:H.Kelly 
   <pre>
  * EOH *
 
+ EventIntegrity-00-08-05-gr03 17-Apr-2012 hmk Merge 17-35-24-br03 L1proc bracch
+   which includes gr02 tag, into br01 branch work for RHEL5
+ EventIntegrity-00-08-05-gr02 22-Mar-2012 hmk check for all possible error codes
+   in EventIntegrityAlg
  EventIntegrity-00-08-05-gr01 25-Jan-2012 hmk Merge in Gaudi v21r7 for rhel5
  EventIntegrity-00-08-05 01-Dec-2010    jrb Make new main branch tag for SCons RM
  EventIntegrity-00-08-04 12-Jun-2010    jrb upgrades for SCons builds
