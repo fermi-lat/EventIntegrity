@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: EventIntegrity
+User: heather  Tue Apr 17 10:33:14 2012
+Files:
+  EventIntegrity/.cvsignore  1.2
+  EventIntegrity/ChangeLog  1.107
+  EventIntegrity/SConscript  1.13
+  EventIntegrity/EventIntegrityLib.py  1.3
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: EventIntegrity-00-08-05-gr03, operation: add
 Package: EventIntegrity
 User: heather  Tue Apr 17 10:29:20 2012
