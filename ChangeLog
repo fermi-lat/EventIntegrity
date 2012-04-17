@@ -4,6 +4,16 @@ Tag name: GlastRelease-17-35-24-rp05, operation: add
 Package: EventIntegrity
 User: heather  Tue Apr 17 10:33:14 2012
 Files:
+  EventIntegrity/src/Dll/EventIntegrity_load.cxx  1.1.1.1
+  EventIntegrity/src/Dll/EventIntegrity_dll.cxx  1.1.1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: EventIntegrity
+User: heather  Tue Apr 17 10:33:14 2012
+Files:
   EventIntegrity/src/.cvsignore  1.1.1.1
   EventIntegrity/src/mainpage.h  1.1.1.1
   EventIntegrity/src/EventIntegrityAlg.cxx  1.13
