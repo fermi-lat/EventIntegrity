@@ -4,6 +4,16 @@ Tag name: GlastRelease-17-35-24-rp05, operation: add
 Package: EventIntegrity
 User: heather  Tue Apr 17 10:33:14 2012
 Files:
+  EventIntegrity/cmt/.cvsignore  1.1.1.1
+  EventIntegrity/cmt/requirements  1.16
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: EventIntegrity
+User: heather  Tue Apr 17 10:33:14 2012
+Files:
   EventIntegrity/.cvsignore  1.2
   EventIntegrity/ChangeLog  1.107
   EventIntegrity/SConscript  1.13
