@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-lp39, operation: add
 Package: EventIntegrity
+User: heather  Wed Oct 17 05:59:18 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-lp39, operation: add
+Package: EventIntegrity
 User: heather  Wed Oct 17 05:49:13 2012
 Files:
   EventIntegrity/.cvsignore  1.2
