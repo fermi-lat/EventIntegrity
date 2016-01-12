@@ -1,5 +1,27 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-20-10-04, operation: add
+Package: EventIntegrity
+User: heather  Tue Jan 12 09:15:52 2016
+Files:
+  EventIntegrity/.cvsignore  1.2
+  EventIntegrity/ChangeLog  1.155
+  EventIntegrity/SConscript  1.16
+  EventIntegrity/EventIntegrityLib.py  1.3
+  EventIntegrity/cmt/.cvsignore  1.1.1.1
+  EventIntegrity/cmt/requirements  1.20
+  EventIntegrity/doc/release.notes  1.20
+  EventIntegrity/src/.cvsignore  1.1.1.1
+  EventIntegrity/src/mainpage.h  1.1.1.1
+  EventIntegrity/src/EventIntegrityAlg.cxx  1.16
+  EventIntegrity/src/Dll/EventIntegrity_load.cxx  1.1.1.1
+  EventIntegrity/src/Dll/EventIntegrity_dll.cxx  1.1.1.1
+  EventIntegrity/src/test/test_EventIntegrity.cxx  1.2
+  EventIntegrity/src/test/jobOptions.txt  1.4
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-20-10-03, operation: add
 Package: EventIntegrity
 User: heather  Wed Jun 17 14:39:26 2015
