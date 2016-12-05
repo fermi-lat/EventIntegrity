@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-20-10-04-gr01, operation: add
 Package: EventIntegrity
+User: heather  Mon Dec  5 09:19:28 2016
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-20-10-04-gr01, operation: add
+Package: EventIntegrity
 User: heather  Mon Dec  5 08:59:32 2016
 Files:
   EventIntegrity/.cvsignore  1.2
